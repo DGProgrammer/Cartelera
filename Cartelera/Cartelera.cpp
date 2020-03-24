@@ -28,11 +28,11 @@ Film_t askInfo()
 int main()
 {
 	
-	int dimension;
+	int dimension = 0;
 	printf("Dime la dimension de tu array: \n");
 	scanf("%d", &dimension);
 
-	Film_t t[2];
+	Film_t * dimensiones = new Film_t[dimension];
 
 	Film_t film = askInfo();
 	film.printInfo();
